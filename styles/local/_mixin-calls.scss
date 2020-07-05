@@ -1,0 +1,4 @@
+/* Create bg color from map */
+.bg {
+  @include create-hex-colors;
+}

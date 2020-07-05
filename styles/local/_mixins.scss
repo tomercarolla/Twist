@@ -1,0 +1,17 @@
+/* generating HEX background colors */
+@mixin create-hex-colors {
+  @each $name, $hex in $colors-hex {
+    &-#{$name} {
+      background-color: $hex;
+    }
+  }
+}
+
+/* generating RGBA background colors */
+@mixin create-transparent-colors {
+  @each $name, $rgba in $colorsTransparent {
+    &-#{$name} {
+      background-color: $rgba;
+    }
+  }
+}

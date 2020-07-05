@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/ico" href="favicon.ico"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap"
+          rel="stylesheet">
+    <link href="styles.css" rel="stylesheet"/>
+    <link href="contact-styles.css" rel="stylesheet">
+
+    <title>טוויסט - צור קשר</title>
+</head>
+<body>
+<header class="header-container">
+    <nav class="header">
+        <div>
+            <a href="index.html">
+                <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
+            </a>
+        </div>
+
+        <ul class="header__list">
+            <li>
+                <a class="not-allowed" href="#">איך מתחילים?</a>
+            </li>
+            <li class="open-progress">
+                <a href="#">תהליכים בחניכה</a>
+                <ul class="open-menu">
+                    <li><a href="open-conversation.html">שיחת פתיחה</a></li>
+                    <li><a href="initiation-program.html">תוכנית חניכה</a></li>
+                    <li><a href="feedback.html">משוב תקופתי</a></li>
+                    <li>
+                        <a class="not-allowed" href="#">חניכה על משימה</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="not-allowed open-progress">
+                <a href="#">אתגרים בחניכה</a>
+                <ul class="open-menu challenge-link">
+                    <li><a class="not-allowed" href="">התנגדויות</a></li>
+                    <li><a class="not-allowed" href="">חניכה מרחוק</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="not-allowed" href="#">שאלות ותשובות</a>
+            </li>
+        </ul>
+
+        <ul class="header__list--left">
+            <li>
+                <a href="about.html">אודות</a>
+            </li>
+            <li class="active">
+                <a href="#">צור קשר</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main role="main">
+    <section class="contact-container padding-section">
+
+        <h1 class="font-super-duper">רוצים לדבר איתנו?</h1>
+
+        <form class="contact-container__form">
+            <div class="column">
+                <label class="font-regular" for="name">שם מלא:</label>
+                <input type="text" placeholder="איך קוראים לך?" id="name">
+            </div>
+
+            <div class="column">
+                <label class="font-regular" for="email">מייל:</label>
+                <input type="text" placeholder="מה כתובת המייל שלך?" id="email">
+            </div>
+
+            <div class="column">
+                <label class="font-regular" for="comment">הודעה:</label>
+                <textarea placeholder="מה רצית להגיד לנו..." id="comment" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="column radio-container">
+                <p>אני משמש היום כחונך?</p>
+
+                <div class="d-flex-align--center">
+                    <div class="yes-radio-button d-flex-align--center">
+                        <label class="font-regular" for="yesCheck">כן</label>
+                        <input type="radio" name="group1" id="yesCheck" class="radio-box">
+                    </div>
+
+                    <div class="d-flex-align--center">
+                        <label class="font-regular" for="noCheck">לא</label>
+                        <input type="radio" name="group1" id="noCheck" class="radio-box">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row checkbox-container">
+                <label class="font-regular" for="checkboxSpam">אני מעוניין לקבל דיווחים</label>
+                <input type="checkbox" id="checkboxSpam" class="checkbox-box">
+            </div>
+
+            <button class="twist-bg-warning">סיימתי!</button>
+        </form>
+
+    </section>
+</main>
+<footer role="contentinfo">
+    <div class="logo-container"><img src="images/logo_twist.png" alt=""></div>
+    <div class="site-map-container font-regular">
+        <div>
+            <a class="font-label not-allowed" href="">איך מתחילים?</a>
+        </div>
+        <div>
+            <p class="font-label">תהליכים בחניכה</p>
+            <ul>
+                <li><a href="open-conversation.html">שיחת פתיחה</a></li>
+                <li><a href="initiation-program.html">תוכנית חניכה</a></li>
+                <li><a href="feedback.html">משוב תקופתי</a></li>
+                <li><a class="not-allowed" href="">חניכה על משימה</a></li>
+            </ul>
+        </div>
+        <div>
+            <p class="font-label">אתגרים בחניכה</p>
+            <ul>
+                <li><a class="not-allowed" href="">התנגדויות</a></li>
+                <li><a class="not-allowed" href="">חניכה מרחוק</a></li>
+            </ul>
+        </div>
+        <div>
+            <a class="font-label not-allowed" href="#">שאלות ותשובות</a>
+        </div>
+        <div>
+            <ul class="site-map-container__list font-label">
+                <li class="about-link"><a href="about.html">אודות</a></li>
+                <li><a href="contact.html">צור קשר</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
