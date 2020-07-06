@@ -2,6 +2,9 @@
 <html lang="he">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="טוויסט מלמד אותך איך להעביר משוב תקופתי ברור ואיכותי לכל עובד!">
+    <meta name="keywords" content="טוייסט, משוב תקופתי">
+    <meta name="author" content="טוויסט">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
@@ -15,11 +18,13 @@
 </head>
 <body>
 <header class="header-container">
-    <nav class="header">
-        <div>
+    <nav class="header" aria-label="ניווט מרכזי">
+        <div class="logo-container">
             <a href="index.html">
                 <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
             </a>
+
+            <a class="acc-content-link" href="#goToContent">דלק לתוכן</a>
         </div>
 
         <ul class="header__list">
@@ -60,6 +65,8 @@
     </nav>
 </header>
 <main role="main">
+    <a id="goToContent" class="acc-anchor">תוכן מרכזי</a>
+
     <section class="cover-img cover-img__feedback" id="coverImgContainer">
         <h1 class="font-super-duper">משוב תקופתי</h1>
 
@@ -68,7 +75,7 @@
         </div>
     </section>
 
-    <section class="sub-menu feedback" id="subMenuContainer">
+    <section class="sub-menu feedback" id="subMenuContainer" aria-label="ניווט משני">
         <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
         <div class="divider"></div>
         <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
@@ -84,11 +91,11 @@
 
         <div class="feedback-open__content">
             <div class="font-super-semi-bold">
-                דיברו, תכננו והסתכלנו - עכשיו הגיע הזמן לסכם ולהמשיך לאתגרים חדשים
+                דיברנו, תכננו והסתכלנו - עכשיו הגיע הזמן לסכם <br>ולהמשיך לאתגרים חדשים
             </div>
 
             <div class="font-big-bold">
-                מה בתכאלס קורה שם?
+                מה בתכאלס קורה פה?
             </div>
 
             <div class="clips-tips">
@@ -114,7 +121,7 @@
         <div class="link-anchor" id="sectionTwo"></div>
 
         <h2 class="font-super-duper">איך זה עובד?</h2>
-        <div class="feedback-video-container__youtube">
+        <div class="feedback-video-container__youtube" aria-label="סרטון שיחת פתיחה">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/b6WPC6SOp7o" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -138,7 +145,8 @@
             </div>
             <div class="notes__left">
                 <div>
-                    נותנים לשיחה מספיק <b>זמן</b> וטיימינג מושלם לא חופרים <b>70% נחנך 30% חונך</b>.
+                    נותנים לשיחה מספיק <b>זמן</b> <br>ובוחרים טיימינג מושלם <br>
+                    לא חופרים - <b>70% נחנך</b> <b>30% חונך</b>
                 </div>
             </div>
         </div>
@@ -222,7 +230,17 @@
         </div>
     </section>
 
-    <section class="credit-container">
+    <section class="download-file-container padding-section">
+        <a class="download-link" href="files/סיכום%20שיחת%20משוב%20תקופתי.pdf" aria-label="PDF להורדה" download>
+            <img class="download-file-container__img" src="images/download-icon.png" alt="">
+            <div class="download-file-container__text">
+                <p>תנו לי את זה כתוב</p>
+                <p>PDF להורדה</p>
+            </div>
+        </a>
+    </section>
+
+    <section class="credit-container credit-padding-top padding-section">
         <div class="popover" id="creditPopover">
 
         </div>

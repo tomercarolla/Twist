@@ -5,19 +5,19 @@ let thirdLink = document.getElementById("thirdLink");
 
 window.addEventListener("scroll", function () {
 //Open conversation page - active links
-    if (window.scrollY > 609 && window.scrollY < 909) {
+    if (window.scrollY > 609 && window.scrollY < 959) {
         firstLink.classList.add("active");
     } else {
         firstLink.classList.remove("active");
     }
 
-    if (window.scrollY > 909 && window.scrollY < 1362) {
+    if (window.scrollY > 959 && window.scrollY < 1493) {
         secondLink.classList.add("active");
     } else {
         secondLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1362) {
+    if (window.scrollY > 1493) {
         thirdLink.classList.add("active");
     } else {
         thirdLink.classList.remove("active");

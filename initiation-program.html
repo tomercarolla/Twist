@@ -2,6 +2,9 @@
 <html lang="he">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="טוויסט מלמד אותך איך לכתוב תוכנית חניכה עם יעדים ברורים ומדויקים כדי להביא את העובד להישגים הכי טובים שלו!">
+    <meta name="keywords" content="טוייסט, תוכנית חניכה">
+    <meta name="author" content="טוויסט">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
@@ -15,11 +18,13 @@
 </head>
 <body>
 <header class="header-container">
-    <nav class="header">
-        <div>
+    <nav class="header" aria-label="ניווט מרכזי">
+        <div class="logo-container">
             <a href="index.html">
                 <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
             </a>
+
+            <a class="acc-content-link" href="#goToContent">דלק לתוכן</a>
         </div>
 
         <ul class="header__list">
@@ -60,6 +65,8 @@
     </nav>
 </header>
 <main role="main">
+    <a id="goToContent" class="acc-anchor">תוכן מרכזי</a>
+
     <section class="cover-img cover-img__init-program" id="coverImgContainer">
         <h1 class="font-super-duper">תוכנית חניכה</h1>
 
@@ -68,7 +75,7 @@
         </div>
     </section>
 
-    <section class="sub-menu" id="subMenuContainer">
+    <section class="sub-menu" id="subMenuContainer" aria-label="ניווט משני">
         <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
         <div class="divider"></div>
         <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
@@ -117,9 +124,8 @@
                 איך זה עובד?
             </h2>
 
-            <div class="video-container__youtube">
-                <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/xQ38pabrJdA" frameborder="0"
+            <div class="video-container__youtube" aria-label="סרטון שיחת פתיחה">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MvwaS3Ql4aI" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
             </div>
@@ -147,10 +153,10 @@
         </div>
     </section>
 
-    <section class="init-program-accordion padding-section accordion accordion__small" tabindex="0">
+    <section class="init-program-accordion padding-section accordion accordion__small">
         <div class="link-anchor" id="sectionThird"></div>
         <h2 class="font-super-duper">
-            לכתוב יעדים חכם - להיות SMART
+            רוצה לכתוב יעדים חכם? תהיה <span lang="en">SMART!</span>
         </h2>
 
         <div class="tabs-container small">
@@ -160,7 +166,7 @@
                     T
                 </label>
                 <div class="accordion__tab--content">
-                    <h3 class="font-super-semi-bold">Time bound - מטרה תחומה בזמן</h3>
+                    <h3 class="font-super-semi-bold"><span lang="en">Time bound</span> - מטרה תחומה בזמן</h3>
 
                     <p class="font-heading-1-normal">על היעד להיות מתאים לפרק הזמן הנתון לחניכה</p>
                 </div>
@@ -172,10 +178,9 @@
                 </label>
                 <div class="arrow"></div>
                 <div class="accordion__tab--content">
-                    <h3 class="font-super-semi-bold">Relevant - מטרה רלוונטית</h3>
+                    <h3 class="font-super-semi-bold"><span lang="en">Relevant</span> - מטרה רלוונטית</h3>
 
-                    <p class="font-heading-1-normal">על היעד להיות רלוונטי <b>למאפייני הנחנך</b> ולנקודות חוזק וחולשה
-                        שלו</p>
+                    <p class="font-heading-1-normal">על היעד להיות רלוונטי <b>למאפייני הנחנך</b> ולתפקיד אותו הוא מבצע</p>
                 </div>
             </div>
             <div class="accordion__tab">
@@ -185,9 +190,9 @@
                 </label>
                 <div class="arrow"></div>
                 <div class="accordion__tab--content">
-                    <h3 class="font-super-semi-bold">Achievable - מטרה ברת השגה</h3>
+                    <h3 class="font-super-semi-bold"><span lang="en">Achievable</span> - מטרה ברת השגה</h3>
 
-                    <p class="font-heading-1-normal">מטרה היגיונית שניתן להשיג אותה, <b>ריאלית</b></p>
+                    <p class="font-heading-1-normal">מטרה הגיונית שניתן להשיג אותה, <b>ריאלית</b></p>
                 </div>
             </div>
             <div class="accordion__tab">
@@ -197,9 +202,9 @@
                 </label>
                 <div class="arrow"></div>
                 <div class="accordion__tab--content">
-                    <h3 class="font-super-semi-bold">Measurable - מטרה מדידה</h3>
+                    <h3 class="font-super-semi-bold"><span lang="en">Measurable</span> - מטרה מדידה</h3>
 
-                    <p class="font-heading-1-normal">המטרה צריכה להיות ניתנת לבחירה בכדי לדעת <b>האם הושגה או לא</b></p>
+                    <p class="font-heading-1-normal">המטרה צריכה להיות ניתנת לבחינה בכדי לדעת <b>האם הושגה או לא</b></p>
                 </div>
             </div>
             <div class="accordion__tab">
@@ -209,10 +214,10 @@
                 </label>
                 <div class="arrow"></div>
                 <div class="accordion__tab--content">
-                    <h3 class="font-super-semi-bold">Specific - מטרה ספציפית</h3>
+                    <h3 class="font-super-semi-bold"><span lang="en">Specific</span> - מטרה ספציפית</h3>
 
-                    <p class="font-heading-1-normal">חייבת להיות <b>מוגדרת</b> היטב, <b>בלי הכללות,</b> <b>הפשאות או
-                        פשפושים</b></p>
+                    <p class="font-heading-1-normal">חייבת להיות <b>מוגדרת</b> היטב, <b>בלי הכללות,</b> <b>הפשטות או
+                        טשטושים</b></p>
                 </div>
             </div>
         </div>
@@ -229,7 +234,8 @@
             </div>
 
             <div class="text-container__middle">
-                <h3 class="font-super-semi-bold">איך נכתוב מדד להצלחה?</h3>
+                <h3 class="font-super-semi-bold">איך עושים את זה? <br>
+                    <span class="font-big   ">קחו את שירה המלצרית</span></h3>
             </div>
 
             <div class="text-container__bottom">
@@ -251,7 +257,33 @@
         </div>
     </section>
 
-    <section class="credit-container">
+    <section class="download-file-container padding-section">
+        <a class="download-link" href="files/סיכום%20תוכנית%20חניכה.pdf" aria-label="PDF להורדה" download>
+            <img class="download-file-container__img" src="images/download-icon.png" alt="">
+            <div class="download-file-container__text">
+                <p>תנו לי את זה כתוב</p>
+                <p><span lang="en">PDF</span> להורדה</p>
+            </div>
+        </a>
+
+        <a class="download-link" href="files/פורמט%20לשיחת%20חוזה%20חניכה.pdf" aria-label="PDF להורדה" download>
+            <img class="download-file-container__img" src="images/download-icon.png" alt="">
+            <div class="download-file-container__text">
+                <p>פורמט לשיחת חוזה</p>
+                <p><span lang="en">PDF</span> להורדה</p>
+            </div>
+        </a>
+
+        <a class="download-link" href="files/פורמט%20לתוכנית%20חניכה.pdf" aria-label="PDF להורדה" download>
+            <img class="download-file-container__img" src="images/download-icon.png" alt="">
+            <div class="download-file-container__text">
+                <p>פורמט לתוכנית חניכה</p>
+                <p><span lang="en">PDF</span> להורדה</p>
+            </div>
+        </a>
+    </section>
+
+    <section class="credit-container credit-padding-top padding-section">
         <div class="popover" id="creditPopover">
 
         </div>

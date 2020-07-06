@@ -2,6 +2,9 @@
 <html lang="he">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="טוויסט צור קשר">
+    <meta name="keywords" content="טוייסט, צור קשר">
+    <meta name="author" content="טוויסט">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap"
@@ -13,11 +16,13 @@
 </head>
 <body>
 <header class="header-container">
-    <nav class="header">
-        <div>
+    <nav class="header" aria-label="ניווט מרכזי">
+        <div class="logo-container">
             <a href="index.html">
                 <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
             </a>
+
+            <a class="acc-content-link" href="#goToContent">דלק לתוכן</a>
         </div>
 
         <ul class="header__list">
@@ -58,6 +63,8 @@
     </nav>
 </header>
 <main role="main">
+    <a id="goToContent" class="acc-anchor">תוכן מרכזי</a>
+
     <section class="contact-container padding-section">
 
         <h1 class="font-super-duper">רוצים לדבר איתנו?</h1>

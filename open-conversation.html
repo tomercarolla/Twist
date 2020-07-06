@@ -2,6 +2,9 @@
 <html lang="he">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="טוויסט מלמד אותך איך לבצע שיחת פתיחה בצורה הטובה ביותר כדי להתחיל תהליך חניכה איכותי ומוצלח.">
+    <meta name="keywords" content="טוייסט, שיחת פתיחה">
+    <meta name="author" content="טוויסט">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
@@ -15,11 +18,13 @@
 </head>
 <body>
 <header class="header-container">
-    <nav class="header">
-        <div>
+    <nav class="header" aria-label="ניווט מרכזי">
+        <div class="logo-container">
             <a href="index.html">
                 <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
             </a>
+
+            <a class="acc-content-link" href="#goToContent">דלק לתוכן</a>
         </div>
 
         <ul class="header__list">
@@ -60,6 +65,8 @@
     </nav>
 </header>
 <main role="main">
+    <a id="goToContent" class="acc-anchor">תוכן מרכזי</a>
+
     <section class="cover-img cover-img__conversation" id="coverImgContainer">
         <h1 class="font-super-duper">שיחת פתיחה</h1>
 
@@ -68,7 +75,7 @@
         </div>
     </section>
 
-    <section class="sub-menu sub-menu__conversation" id="subMenuContainer">
+    <section class="sub-menu sub-menu__conversation" id="subMenuContainer" aria-label="ניווט משני">
         <a href="#sectionOne" class="link" id="firstLink">פתיחה</a>
         <div class="divider"></div>
         <a href="#sectionTwo" class="link" id="secondLink">סרטון</a>
@@ -80,17 +87,17 @@
         <div class="link-anchor" id="sectionOne"></div>
         <div class="how-it-works__content">
             <div class="top font-big">
-                <p><b>שיחת פתיחה</b> היא נקודת ההתחלה לכל תהליך חניכה וליווי של עובד.</p>
-                <p>כל מה שצריך זה good vibes ומקום שקט</p>
-                <p>שבו על כוס קפה ותתחילו להכיר</p>
+                <p><b>שיחת פתיחה</b> היא נקודת ההתחלה של כל תהליך חניכה וליווי של עובד.</p>
+                <p lang="en">כל מה שצריך זה good vibes ומקום שקט...</p>
+                <p>אז יאללה, שבו על כוס קפה ותתחילו להכיר.</p>
             </div>
         </div>
     </section>
 
     <section class="video-container padding-section">
         <div class="link-anchor" id="sectionTwo"></div>
-        <h2 class="font-super-duper">איך זה עובד?</h2>
-        <div class="video-container__youtube">
+        <h2 class="font-super-duper">איך עושים את זה?</h2>
+        <div class="video-container__youtube" aria-label="סרטון שיחת פתיחה">
             <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/xQ38pabrJdA" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -115,10 +122,11 @@
 
                     <ol class="list">
                         <li>
-                            <b class="font-heading-3">הפשרה / "שבירת הקרח"</b> - נדבר קלילות לפני שנגיע לרגע הרשמי.
+                            <b class="font-heading-3">הפשרה / "שבירת הקרח"</b> - נדבר בקלילות לפני שנגיע לרגע הרשמי.
                         </li>
                         <li>
-                            <b class="font-heading-3">הצגת מטרות השיחה</b> - "חשוב לי שנכיר את השני טוב יותר ונעבור
+                            <b class="font-heading-3">הצגת מטרות השיחה</b> - לדוגמה: "חשוב לי שנכיר את השני טוב יותר
+                            ונעבור
                             תהליך חניכה ולמידה משותף שיביא אותנו להצלחה משותפת".
                         </li>
                         <li>
@@ -139,20 +147,16 @@
 
                     <ol class="list">
                         <li>
-                            נספר על <b> עצמינו בקוצרה</b>.
+                            נספר על <b> עצמינו בקצרה</b>.
                         </li>
                         <li>
                             נבקש מהעובד <b>לספר על עצמו</b>.
                         </li>
                         <li>
-                            נקודות <b>חוזר וחולשה</b> ומהם היעדים האישיים של העובד.
+                            נשאל על נקודות <b>החוזק והחולשה</b> ומהם היעדים האישיים של העובד.
                         </li>
                         <li>
                             הצעת <b>יעדים אישיים</b> ע"י הונך.
-                        </li>
-                        <li>
-                            במידה של <b>אי הסכמה</b> על היעדים מצד הנחנך (העובד) עלינו להסביר לעובד <b>מה מטרת
-                            המשימה</b> שלו ולמה אלו הם היעדים.
                         </li>
                     </ol>
                 </div>
@@ -169,10 +173,10 @@
                     <h2 class="font-heading-2">סיכום</h2>
 
                     <div class="list">
-                        כעט עלינו לבצע סגירה של הכל ולוודא שבאמת שני הצדדים <b>מדברים על אותם הדברים</b><br>
-                        # חשוב לציין כי <b>שלב זה הוא קריטי!</b><br>
-                        במידה והמעסיק/החונך הבין יעדים x והנחנך הבין יעדים y <br>
-                        <b>כל התהליך החניכה יראה אחרת ושגוי וככה גם התוצאות.</b>
+                        כעת עלינו לבצע סגירה של הכל ולוודא שבאמת שני הצדדים <b>מדברים על אותם הדברים.</b><br>
+                        זהו שלב קריטי בשיחה!<br>
+                        במידה והמעסיק/החונך הבין יעדים מסוימים והנחנך הבין יעדים אחרים <br>
+                        <b>כל תהליך החניכה יצא שגוי וכך גם התוצאות.</b>
                     </div>
                 </div>
             </div>
@@ -180,16 +184,16 @@
     </section>
 
     <section class="download-file-container padding-section">
-        <a class="download-link" href="#">
+        <a class="download-link" href="files/סיכום%20שיחת%20פתיחה.pdf" aria-label="PDF להורדה" download>
             <img class="download-file-container__img" src="images/download-icon.png" alt="">
             <div class="download-file-container__text">
-                <p>תנו לי את זה כתב</p>
+                <p>תנו לי את זה כתוב</p>
                 <p>PDF להורדה</p>
             </div>
         </a>
     </section>
 
-    <section class="credit-container">
+    <section class="credit-container credit-padding-top padding-section">
         <div class="popover" id="creditPopover">
 
         </div>

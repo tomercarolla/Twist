@@ -2,6 +2,9 @@
 <html lang="he">
 <head>
     <meta charset="utf-8">
+    <meta name="description" content="טוויסט מאפשר לכל אחד שנדרש לחנוך אחרים במסגרת תפקידו, גם ללא ניסיון בניהול וחניכה, ללמוד כיצד לחנוך, או לשלוף מידע בנושא, ממקור פשוט, נגיש ומהיר.">
+    <meta name="keywords" content="טוייסט, חניכה">
+    <meta name="author" content="טוויסט">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
@@ -14,11 +17,13 @@
 </head>
 <body>
 <header class="header-container">
-    <nav class="header">
-        <div>
+    <nav class="header" aria-label="ניווט מרכזי">
+        <div class="logo-container">
             <a href="index.html">
                 <img class="logo" src="images/logo_twist.png" alt="טוויסט עמוד הבית">
             </a>
+
+            <a class="acc-content-link" href="#goToContent">דלק לתוכן</a>
         </div>
 
         <ul class="header__list">
@@ -58,21 +63,24 @@
         </ul>
     </nav>
 </header>
+
 <main role="main">
-    <section class="cover-img cover-img__homepage" tabindex="0">
+    <a id="goToContent" class="acc-anchor">תוכן מרכזי</a>
+
+    <section class="cover-img cover-img__homepage">
         <h1 class="cover-text font-super-duper">ללמוד איך לחנוך עובדים,
             <span class="twist-text">עם טוויסט</span></h1>
     </section>
 
-    <section class="padding-section what-is-twist" tabindex="0">
+    <section class="padding-section what-is-twist">
         <h1 class="font-super-duper what-is-twist__title">מה הטוויסט?</h1>
 
-        <div class="font-super text">
+        <p class="font-super text">
             מידע פרקטי ונגיש שיעזור לך <b>לחנוך</b> את העובדים שלך בדרך שהכי נוחה <b>לך</b>!
-        </div>
+        </p>
     </section>
 
-    <section class="padding-section what-we-do" tabindex="0">
+    <section class="padding-section what-we-do">
         <h1 class="font-super-duper what-we-do__title">מה עושים פה?</h1>
 
         <div class="link-container font-big">
@@ -97,7 +105,7 @@
         </div>
     </section>
 
-    <section class="carousel-container" tabindex="0">
+    <section class="carousel-container">
         <img class="clips-image" src="images/clips-group.png" alt="">
         <h1 class="font-super-duper carousel-container__title">ת'שמעו קטע...</h1>
 
@@ -141,7 +149,7 @@
         </div>
     </section>
 
-    <section class="credit-container">
+    <section class="credit-container padding-section">
         <div class="popover" id="creditPopover">
 
         </div>

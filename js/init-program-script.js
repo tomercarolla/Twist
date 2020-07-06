@@ -7,25 +7,25 @@ let fourLink = document.getElementById("fourLink");
 
 window.addEventListener("scroll", function () {
 //Initial program page - active links
-    if (window.scrollY > 609 && window.scrollY < 1320) {
+    if (window.scrollY > 609 && window.scrollY < 1369) {
         firstLink.classList.add("active");
     } else {
         firstLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1319 && window.scrollY < 1819) {
+    if (window.scrollY > 1369 && window.scrollY < 1869) {
         secondLink.classList.add("active");
     } else {
         secondLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1819 && window.scrollY < 1977) {
+    if (window.scrollY > 1869 && window.scrollY < 2107) {
         thirdLink.classList.add("active");
     } else {
         thirdLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1977) {
+    if (window.scrollY > 2107) {
         fourLink.classList.add("active");
     } else {
         fourLink.classList.remove("active");

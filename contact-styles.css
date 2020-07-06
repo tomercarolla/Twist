@@ -68,7 +68,6 @@
 .contact-container__form input,
 .contact-container__form textarea {
   border: 1px solid #000;
-  border-radius: 8px;
   height: 30px;
   width: 100%;
   padding-right: 0.5em;
@@ -84,7 +83,6 @@
 .contact-container__form .twist-bg-warning {
   background: var(--color-warning-500);
   border: 1px solid var(--color-warning-500);
-  border-radius: 20px;
   width: 180px;
   height: 40px;
   font-size: 1em;

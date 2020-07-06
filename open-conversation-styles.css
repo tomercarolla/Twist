@@ -14,7 +14,7 @@
 .how-it-works__content .top {
   padding-top: 140px;
   padding-left: 110px;
-  max-width: 650px;
+  max-width: 670px;
   line-height: 1.5;
 }
 .how-it-works__content .top p:last-child {
@@ -48,7 +48,7 @@
 }
 
 .conversation-accordion {
-  min-height: 570px;
+  height: 540px;
 }
 .conversation-accordion__title {
   color: var(--color-primary-900);

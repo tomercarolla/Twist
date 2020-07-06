@@ -75,6 +75,7 @@
 }
 .notes-container .notes__left > div {
   transform: rotate(-5deg);
+  padding-right: 25px;
 }
 .notes-container .notes > div {
   width: 295px;

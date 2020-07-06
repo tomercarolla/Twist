@@ -13,19 +13,19 @@ window.addEventListener("scroll", function () {
         firstLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1049 && window.scrollY < 1486) {
+    if (window.scrollY > 1049 && window.scrollY < 1496) {
         secondLink.classList.add("active");
     } else {
         secondLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1486 && window.scrollY < 1726) {
+    if (window.scrollY > 1496 && window.scrollY < 1811) {
         thirdLink.classList.add("active");
     } else {
         thirdLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1726) {
+    if (window.scrollY > 1811) {
         fourLink.classList.add("active");
     } else {
         fourLink.classList.remove("active");

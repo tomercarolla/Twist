@@ -352,9 +352,6 @@ body {
   font-weight: 400;
 }
 
-* {
-  outline: none;
-}
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
@@ -486,6 +483,9 @@ footer .site-map-container .about-link {
 .header__list .open-progress:hover .open-menu, .header__list .open-progress:focus .open-menu, .header__list .open-progress:focus-within .open-menu {
   display: block;
 }
+.header .logo-container {
+  display: flex;
+}
 .header .logo {
   width: 150px;
   padding-top: 4px;
@@ -508,8 +508,19 @@ footer .site-map-container .about-link {
   justify-content: flex-start;
 }
 
+.acc-content-link {
+  position: absolute;
+  right: -99px;
+  top: -30px;
+}
+
+.acc-anchor {
+  position: absolute;
+  right: -99999px;
+}
+
 .padding-section {
-  padding: 20px 67px 20px;
+  padding: 25px 67px 20px;
 }
 
 .cover-img {
@@ -630,16 +641,16 @@ footer .site-map-container .about-link {
   position: relative;
 }
 .sub-menu .link:hover {
-  color: var(--color-info-700);
+  color: var(--color-success-600);
 }
 .sub-menu .link.active {
-  color: var(--color-info-700);
+  color: var(--color-success-600);
 }
 .sub-menu .link.active:after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid var(--color-info-700);
-  width: 25px;
+  border-bottom: 1px solid var(--color-success-600);
+  width: 100%;
   height: 2px;
   bottom: 0;
 }
@@ -655,6 +666,10 @@ footer .site-map-container .about-link {
   visibility: hidden;
 }
 
+.download-file-container {
+  display: flex;
+  align-items: center;
+}
 .download-file-container__text {
   display: flex;
   flex-direction: column;
@@ -667,6 +682,7 @@ footer .site-map-container .about-link {
 .download-file-container .download-link {
   display: inline-flex;
   align-items: center;
+  margin-left: 20px;
 }
 
 .not-allowed {
@@ -674,8 +690,10 @@ footer .site-map-container .about-link {
 }
 
 .credit-container {
-  padding: 20px 0;
   position: relative;
+}
+.credit-container.credit-padding-top {
+  padding-top: 0;
 }
 .credit-container .popover {
   position: absolute;
@@ -725,7 +743,6 @@ footer .site-map-container .about-link {
 .credit-container .twist-bg-info {
   background: var(--color-info-500);
   border: 1px solid var(--color-info-500);
-  border-radius: 20px;
   width: 180px;
   height: 40px;
   font-size: 1em;
@@ -1115,7 +1132,6 @@ footer .site-map-container .about-link {
 .buttons-container .twist-bg-info {
   background: var(--color-info-600);
   border: 1px solid var(--color-info-600);
-  border-radius: 20px;
   width: 180px;
   height: 40px;
   font-size: 1em;
