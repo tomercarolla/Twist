@@ -30,7 +30,7 @@
     }
   }
 
-  h2 {
+  h1 {
     color: var(--color-success-700);
 
     span {
@@ -40,6 +40,7 @@
 }
 
 .init-program-info {
+  background: var(--color-warning-400);
   position: relative;
   height: 250px;
   display: flex;
@@ -130,7 +131,7 @@
     }
   }
 
-  h2 {
+  h1 {
     color: var(--color-primary-900);
   }
 }
@@ -139,7 +140,7 @@
   height: 365px;
   position: relative;
 
-  h2 {
+  h1 {
     color: var(--color-primary-900);
   }
 }
@@ -150,7 +151,7 @@
   height: 500px;
   background-position-y: -90px;
 
-  h2 {
+  h1 {
     color: var(--color-primary-900);
   }
 

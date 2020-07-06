@@ -41,7 +41,7 @@
   padding: 4px;
   height: 325px;
 }
-.video-container h2 {
+.video-container h1 {
   align-self: flex-start;
   color: var(--color-primary-900);
   margin-top: 20px;
