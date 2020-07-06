@@ -19,13 +19,13 @@ window.addEventListener("scroll", function () {
         secondLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1496 && window.scrollY < 1811) {
+    if (window.scrollY > 1496 && window.scrollY < 1702) {
         thirdLink.classList.add("active");
     } else {
         thirdLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1811) {
+    if (window.scrollY > 1702) {
         fourLink.classList.add("active");
     } else {
         fourLink.classList.remove("active");

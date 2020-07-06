@@ -294,6 +294,13 @@
   }
 
   &__medium {
+    input {
+      &:checked {
+        ~ .accordion__tab--content {
+          height: 115px;
+        }
+      }
+    }
     .accordion__tab {
       width: 130px;
 

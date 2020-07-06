@@ -224,6 +224,9 @@
 .accordion__small .tabs-container.small {
   grid-template-columns: repeat(5, 1fr);
 }
+.accordion__medium input:checked ~ .accordion__tab--content {
+  height: 115px;
+}
 .accordion__medium .accordion__tab {
   width: 130px;
 }
