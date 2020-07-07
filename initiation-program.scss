@@ -162,27 +162,23 @@
     flex-direction: column;
     justify-content: space-around;
 
+    &__middle {
+      padding-top: 80px;
+    }
+
     &__bottom {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       width: 800px;
+
+      .left {
+        margin-left: 50px;
+      }
 
       .left,
       .right {
         display: flex;
-        align-items: flex-start;
-
-        > div {
-          display: flex;
-          flex-direction: column;
-        }
-
-        img {
-          width: 70px;
-          padding-top: 7px;
-          margin-left: 12px;
-        }
+        flex-direction: column;
       }
     }
   }

@@ -1,5 +1,4 @@
 //Initial program links variables
-
 let firstLink = document.getElementById("firstLink");
 let secondLink = document.getElementById("secondLink");
 let thirdLink = document.getElementById("thirdLink");

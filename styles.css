@@ -314,6 +314,11 @@ body {
   font-weight: 600;
 }
 
+.font-heading-1-light {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .font-heading-1-normal {
   font-size: 18px;
 }
@@ -408,7 +413,7 @@ footer .site-map-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 100px;
+  padding: 0 100px 0 70px;
 }
 footer .site-map-container__list {
   display: flex;
@@ -699,6 +704,9 @@ footer .site-map-container .about-link {
 
 .credit-container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .credit-container.credit-padding-top {
   padding-top: 0;
@@ -784,6 +792,26 @@ footer .site-map-container .about-link {
 }
 .credit-container .twist-bg-info:hover {
   background: var(--color-info-400);
+}
+.credit-container .link-next-page {
+  display: flex;
+  align-items: center;
+}
+.credit-container .link-next-page .link.twist-bg-warning {
+  background: var(--color-warning-500);
+  border: 1px solid var(--color-warning-500);
+  width: 100px;
+  height: 40px;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: #000;
+  transition: all 0.3s ease-out 0s;
+}
+.credit-container .link-next-page .link.twist-bg-warning:hover {
+  background: var(--color-warning-400);
 }
 
 .what-is-twist {
