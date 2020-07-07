@@ -374,7 +374,7 @@ body {
   background-color: transparent;
 }
 *:focus {
-  outline: 1px solid blue;
+  outline: none;
 }
 
 html {

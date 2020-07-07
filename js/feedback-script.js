@@ -25,7 +25,7 @@ window.addEventListener("scroll", function () {
         thirdLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1702) {
+    if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 2)) {
         fourLink.classList.add("active");
     } else {
         fourLink.classList.remove("active");
