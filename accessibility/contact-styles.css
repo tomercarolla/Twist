@@ -75,6 +75,7 @@
 .contact-container__form input::placeholder,
 .contact-container__form textarea::placeholder {
   font-family: "Heebo", sans-serif;
+  color: #000;
 }
 .contact-container__form textarea {
   resize: none;

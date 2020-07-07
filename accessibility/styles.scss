@@ -79,6 +79,99 @@ footer {
   }
 }
 
+.contrast {
+  *,
+  .header-container,
+  .sub-menu .link.active,
+  .sub-menu .link:hover,
+  .cover-img__homepage h1,
+  .what-is-twist__title,
+  .what-is-twist .text,
+  .what-we-do__title,
+  .carousel-container__title,
+  .cover-img__conversation h1,
+  .cover-img__conversation .text,
+  .cover-img__init-program h1,
+  .cover-img__init-program .text,
+  .init-program-what h1,
+  .init-program-what h1 span,
+  .init-program-video h1,
+  .init-program-accordion h1,
+  .measurable-container h1,
+  .init-program-video__right .list__item,
+  .video-container h1,
+  .cover-img__feedback h1,
+  .cover-img__feedback .text,
+  .feedback-open h1,
+  .feedback-video-container h1,
+  .notes-container h1,
+  .feedback-accordion__title,
+  .conversation-accordion__title,
+  .about-container h1,
+  .about-container a,
+  .credit-container .popover a,
+  .accordion__tab:nth-of-type(1) .accordion__tab--content,
+  .accordion__tab:nth-of-type(2) .accordion__tab--content,
+  .accordion__tab:nth-of-type(3) .accordion__tab--content {
+    background: #000;
+    color: yellow;
+    border-color: yellow;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .about-container a:hover {
+    text-decoration: none;
+  }
+
+  .what-is-twist__title {
+    max-width: 600px;
+  }
+
+  .accordion__tab:nth-of-type(1) label,
+  .accordion__tab:nth-of-type(2) label,
+  .accordion__tab:nth-of-type(3) label,
+  .accordion__small .accordion__tab:nth-of-type(1) label,
+  .accordion__small .accordion__tab:nth-of-type(2) label,
+  .accordion__small .accordion__tab:nth-of-type(3) label,
+  .accordion__small .accordion__tab:nth-of-type(4) label,
+  .accordion__small .accordion__tab:nth-of-type(5) label{
+    background: yellow;
+    color: #000;
+  }
+
+  .carousel__arrows .arrow {
+    border-color: yellow;
+  }
+
+  .credit-container .link-next-page .link.twist-bg-warning,
+  .credit-container .twist-bg-info {
+    border-color: yellow;
+    background: #000;
+    color: yellow;
+
+    &:hover {
+      border-color: yellow;
+      background: #000;
+      color: yellow;
+    }
+  }
+
+  .credit-container .popover .close {
+    color: yellow;
+  }
+
+  .contact-container__form input, .contact-container__form textarea {
+    background: #FFF;
+  }
+}
+
 .header-container {
   background: #FFF;
   display: flex;

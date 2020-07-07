@@ -423,6 +423,88 @@ footer .site-map-container .about-link {
   margin-left: 30px;
 }
 
+.contrast *,
+.contrast .header-container,
+.contrast .sub-menu .link.active,
+.contrast .sub-menu .link:hover,
+.contrast .cover-img__homepage h1,
+.contrast .what-is-twist__title,
+.contrast .what-is-twist .text,
+.contrast .what-we-do__title,
+.contrast .carousel-container__title,
+.contrast .cover-img__conversation h1,
+.contrast .cover-img__conversation .text,
+.contrast .cover-img__init-program h1,
+.contrast .cover-img__init-program .text,
+.contrast .init-program-what h1,
+.contrast .init-program-what h1 span,
+.contrast .init-program-video h1,
+.contrast .init-program-accordion h1,
+.contrast .measurable-container h1,
+.contrast .init-program-video__right .list__item,
+.contrast .video-container h1,
+.contrast .cover-img__feedback h1,
+.contrast .cover-img__feedback .text,
+.contrast .feedback-open h1,
+.contrast .feedback-video-container h1,
+.contrast .notes-container h1,
+.contrast .feedback-accordion__title,
+.contrast .conversation-accordion__title,
+.contrast .about-container h1,
+.contrast .about-container a,
+.contrast .credit-container .popover a,
+.contrast .accordion__tab:nth-of-type(1) .accordion__tab--content,
+.contrast .accordion__tab:nth-of-type(2) .accordion__tab--content,
+.contrast .accordion__tab:nth-of-type(3) .accordion__tab--content {
+  background: #000;
+  color: yellow;
+  border-color: yellow;
+}
+.contrast a {
+  text-decoration: underline;
+}
+.contrast a:hover {
+  text-decoration: none;
+}
+.contrast .about-container a:hover {
+  text-decoration: none;
+}
+.contrast .what-is-twist__title {
+  max-width: 600px;
+}
+.contrast .accordion__tab:nth-of-type(1) label,
+.contrast .accordion__tab:nth-of-type(2) label,
+.contrast .accordion__tab:nth-of-type(3) label,
+.contrast .accordion__small .accordion__tab:nth-of-type(1) label,
+.contrast .accordion__small .accordion__tab:nth-of-type(2) label,
+.contrast .accordion__small .accordion__tab:nth-of-type(3) label,
+.contrast .accordion__small .accordion__tab:nth-of-type(4) label,
+.contrast .accordion__small .accordion__tab:nth-of-type(5) label {
+  background: yellow;
+  color: #000;
+}
+.contrast .carousel__arrows .arrow {
+  border-color: yellow;
+}
+.contrast .credit-container .link-next-page .link.twist-bg-warning,
+.contrast .credit-container .twist-bg-info {
+  border-color: yellow;
+  background: #000;
+  color: yellow;
+}
+.contrast .credit-container .link-next-page .link.twist-bg-warning:hover,
+.contrast .credit-container .twist-bg-info:hover {
+  border-color: yellow;
+  background: #000;
+  color: yellow;
+}
+.contrast .credit-container .popover .close {
+  color: yellow;
+}
+.contrast .contact-container__form input, .contrast .contact-container__form textarea {
+  background: #FFF;
+}
+
 .header-container {
   background: #FFF;
   display: flex;

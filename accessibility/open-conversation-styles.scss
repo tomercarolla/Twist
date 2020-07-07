@@ -4,12 +4,14 @@
   background-size: cover;
   background-position-y: -50px;
   position: relative;
+  display: flex;
+  justify-content: flex-end;
 
   &__content {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    width: 100%;
+    width: fit-content;
 
     .top {
       padding-top: 140px;
