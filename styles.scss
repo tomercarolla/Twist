@@ -26,6 +26,10 @@
   &::-webkit-scrollbar-corner {
     background-color: transparent;
   }
+
+  &:focus {
+    outline: 1px solid blue;
+  }
 }
 
 html {

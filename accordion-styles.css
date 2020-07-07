@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700;800&display=swap");
 .accordion input {
   position: absolute;
-  opacity: 0;
-  z-index: -1;
+  background-color: transparent;
+  border: 1px solid transparent;
 }
 .accordion input:checked ~ label span {
   display: block;
@@ -10,10 +10,6 @@
 .accordion input:checked ~ .accordion__tab--content {
   height: 260px;
   padding: 1em;
-}
-.accordion input:focus, .accordion input:focus-within {
-  border: 1px solid #000;
-  outline: #000;
 }
 .accordion__tab {
   width: 230px;
@@ -74,6 +70,12 @@
   list-style: decimal;
   margin-bottom: 0.3em;
   line-height: 1.4;
+}
+.accordion__tab input[type=checkbox]:focus + label,
+.accordion__tab input[type=radio]:focus + label,
+.accordion__tab input[type=checkbox]:focus-within + label,
+.accordion__tab input[type=radio]:focus-within + label {
+  outline: 1px solid blue;
 }
 .accordion__tab label {
   display: flex;
