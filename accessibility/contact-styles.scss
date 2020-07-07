@@ -1,0 +1,115 @@
+.contact-container {
+  padding-top: 100px;
+  background: url('../images/contact-bg.jpg') no-repeat -30px 120px;
+  background-size: 800px;
+
+  &__form {
+    width: 450px;
+    padding-bottom: 40px;
+    padding-right: 3px;
+    padding-top: 0;
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: .5em;
+    }
+
+    .row {
+      display: flex;
+      align-items: center;
+      margin-bottom: .5em;
+
+      label {
+        margin: 0;
+      }
+    }
+
+    .checkbox-container {
+      margin-top: 1em;
+
+      label {
+        margin-left: .5em;
+      }
+
+      input {
+        width: 15px;
+        height: 15px;
+      }
+
+      label,
+      input {
+        cursor: pointer;
+      }
+    }
+
+    .radio-container {
+      margin-top: 1em;
+
+      label {
+        margin-bottom: 0;
+        height: 17px;
+        margin-left: .3em;
+        cursor: pointer;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .yes-radio-button {
+        margin-left: .5em;
+        cursor: pointer;
+      }
+
+      .radio-box {
+        width: 15px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+
+    .d-flex-align--center {
+      display: flex;
+      align-items: center;
+    }
+
+    label {
+      margin-bottom: .5em;
+      font-size: 16px;
+    }
+
+    input,
+    textarea {
+      border: 1px solid #000;
+      height: 30px;
+      width: 100%;
+      padding-right: .5em;
+
+      &::placeholder {
+        font-family: 'Heebo', sans-serif;
+      }
+    }
+
+    textarea {
+      resize: none;
+      height: 150px;
+    }
+
+    .twist-bg-warning {
+      background: var(--color-warning-500);
+      border: 1px solid var(--color-warning-500);
+      width: 180px;
+      height: 40px;
+      font-size: 1em;
+      margin-top: 1em;
+      cursor: pointer;
+      color: #000;
+      transition: all 0.3s ease-out 0s;
+
+      &:hover {
+        background: var(--color-warning-400);
+      }
+    }
+  }
+}

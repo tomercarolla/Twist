@@ -1,5 +1,5 @@
 .init-program-what {
-  background: url('images/init-program-what.jpg') no-repeat center center;
+  background: url('../images/init-program-what.jpg') no-repeat center center;
   background-size: cover;
   height: 510px;
   background-position-y: -70px;
@@ -60,7 +60,7 @@
 
 .init-program-video {
   height: 500px;
-  background: url('images/hand-img.jpg') no-repeat center center;
+  background: url('../images/hand-img.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   position: relative;
@@ -76,7 +76,7 @@
       position: absolute;
       top: 50px;
       left: -83px;
-      background: url('images/arrow.png') no-repeat;
+      background: url('../images/arrow.png') no-repeat;
       width: 70px;
       height: 70px;
       background-size: contain;
@@ -146,7 +146,7 @@
 }
 
 .measurable-container {
-  background: url('images/measurable-bg.jpg') no-repeat;
+  background: url('../images/measurable-bg.jpg') no-repeat;
   background-size: cover;
   height: 500px;
   background-position-y: -90px;

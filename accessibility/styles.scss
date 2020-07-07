@@ -1,8 +1,8 @@
 ﻿//ייבוא של צבעים
-@import 'styles/config';
+@import '../styles/config';
 
 //ייבוא של פונטים
-@import 'styles/local';
+@import '../styles/local';
 
 //general CSS
 
@@ -221,7 +221,7 @@ footer {
   justify-content: center;
 
   &__homepage {
-    background-image: url('images/homepage-image.jpg');
+    background-image: url('../images/homepage-image.jpg');
     background-position-y: -50px;
 
     h1 {
@@ -237,7 +237,7 @@ footer {
   }
 
   &__conversation {
-    background-image: url('images/conversation-cover.jpg');
+    background-image: url('../images/conversation-cover.jpg');
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -259,7 +259,7 @@ footer {
   }
 
   &__init-program {
-    background: url('images/init-program-cover.jpg') no-repeat center center;
+    background: url('../images/init-program-cover.jpg') no-repeat center center;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -281,7 +281,7 @@ footer {
   }
 
   &__feedback {
-    background: url('images/feedback-cover.jpg') no-repeat center center;
+    background: url('../images/feedback-cover.jpg') no-repeat center center;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -312,7 +312,7 @@ footer {
       transform: translate(-50%);
       top: 70%;
       left: 25px;
-      background-image: url('images/cover-smile copy.png');
+      background-image: url('../images/cover-smile copy.png');
       width: 45px;
       height: 70px;
       background-repeat: no-repeat;
@@ -538,7 +538,7 @@ footer {
 
 .what-is-twist {
   height: 300px;
-  background: url('images/clips.png') no-repeat top center;
+  background: url('../images/clips.png') no-repeat top center;
   background-size: 165px;
   background-position-x: 110px;
   display: flex;
@@ -559,7 +559,7 @@ footer {
 }
 
 .what-we-do {
-  background: url('images/what-we-do.jpg') no-repeat center right;
+  background: url('../images/what-we-do.jpg') no-repeat center right;
   height: 540px;
   background-size: cover;
   display: flex;
@@ -597,7 +597,7 @@ footer {
           position: absolute;
           width: 100%;
           height: 100%;
-          background: url('images/label-pink.png') no-repeat center center;
+          background: url('../images/label-pink.png') no-repeat center center;
           background-size: cover;
           z-index: 1;
         }
@@ -608,7 +608,7 @@ footer {
           transform: scale(1.2) rotate(-5deg);
 
           &:after {
-            background: url('images/label-blue.png') no-repeat center center;
+            background: url('../images/label-blue.png') no-repeat center center;
             background-size: cover;
           }
 
@@ -647,7 +647,7 @@ footer {
       &:after {
         content: '';
         position: absolute;
-        background: url('images/arrow.png') no-repeat center center;
+        background: url('../images/arrow.png') no-repeat center center;
         width: 100%;
         height: 80px;
         right: -150px;
@@ -663,7 +663,7 @@ footer {
       &:after {
         content: '';
         position: absolute;
-        background: url('images/arrow.png') no-repeat center center;
+        background: url('../images/arrow.png') no-repeat center center;
         width: 100%;
         height: 80px;
         left: -150px;
@@ -702,457 +702,6 @@ footer {
     z-index: 99;
   }
 }
-
-
-$questionTransition: 0.5s;
-
-.style-guide {
-  text-align: center;
-}
-
-.sg-colors-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-.sg-colors {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  > div {
-    color: #000;
-    width: 200px;
-    height: 50px;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    margin-bottom: .5em;
-  }
-
-  h3 {
-    margin-bottom: .5em;
-  }
-
-  &.primary {
-    > div {
-      color: #000;
-    }
-  }
-
-  &.success {
-    > div {
-      color: #58a306;
-    }
-  }
-
-  &.danger {
-    > div {
-      color: #000;
-    }
-  }
-}
-
-.buttons-container {
-  margin: 40px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-
-  h3 {
-    margin-bottom: 1em;
-    font-family: "Assistant", sans-serif;
-  }
-
-  button {
-    margin-bottom: 1em;
-  }
-
-  .twist-bg-primary-effect {
-    background: transparent;
-    border: 1px solid var(--color-primary-600);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: var(--color-primary-600);
-    transition: all 0.3s;
-    transition-property: color;
-    transition-duration: 0.5s;
-    position: relative;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transform: perspective(1px) translateZ(0);
-
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--color-primary-600);
-      transform: scaleX(0);
-      transform-origin: 100%;
-      transition-property: transform;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &:before {
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  .twist-bg-success-effect {
-    background: transparent;
-    border: 1px solid var(--color-success-600);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: var(--color-success-600);
-    transition: all 0.3s;
-    transition-property: color;
-    transition-duration: 0.5s;
-    position: relative;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transform: perspective(1px) translateZ(0);
-
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--color-success-600);
-      transform: scaleX(0);
-      transform-origin: 100%;
-      transition-property: transform;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &:before {
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  .twist-bg-info-effect {
-    background: transparent;
-    border: 1px solid var(--color-info-600);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: var(--color-info-600);
-    transition: all 0.3s;
-    transition-property: color;
-    transition-duration: 0.5s;
-    position: relative;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transform: perspective(1px) translateZ(0);
-
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--color-info-600);
-      transform: scaleX(0);
-      transform-origin: 100%;
-      transition-property: transform;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &:before {
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  .twist-bg-warning-effect {
-    background: transparent;
-    border: 1px solid var(--color-warning-500);
-    border-radius: 20px;
-    overflow: hidden;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: var(--color-warning-500);
-    transition: all 0.3s;
-    transition-property: color;
-    transition-duration: 0.5s;
-    position: relative;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    transform: perspective(1px) translateZ(0);
-
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--color-warning-500);
-      transform: scaleX(0);
-      transform-origin: 100%;
-      transition-property: transform;
-      transition-duration: 0.5s;
-      transition-timing-function: ease-out;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &:before {
-        transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  .twist-bg-primary {
-    background: var(--color-primary-600);
-    border: 1px solid var(--color-primary-600);
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: #FFF;
-    transition: all 0.3s ease-out 0s;
-
-    &:hover {
-      background: var(--color-primary-500);
-    }
-  }
-
-  .twist-bg-success {
-    background: var(--color-success-600);
-    border: 1px solid var(--color-success-600);
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: #FFF;
-    transition: all 0.3s ease-out 0s;
-
-    &:hover {
-      background: var(--color-success-500);
-    }
-  }
-
-  .twist-bg-info {
-    background: var(--color-info-600);
-    border: 1px solid var(--color-info-600);
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: #FFF;
-    transition: all 0.3s ease-out 0s;
-
-    &:hover {
-      background: var(--color-info-500);
-    }
-  }
-
-  .twist-bg-warning {
-    background: var(--color-warning-500);
-    border: 1px solid var(--color-warning-500);
-    border-radius: 20px;
-    width: 180px;
-    height: 40px;
-    font-size: 1em;
-    cursor: pointer;
-    color: #FFF;
-    transition: all 0.3s ease-out 0s;
-
-    &:hover {
-      background: var(--color-warning-400);
-    }
-  }
-}
-
-.typography {
-  margin-bottom: 2em;
-  direction: rtl;
-
-  div, h1, h2, h3, h4, label, p {
-    margin-bottom: 1em;
-  }
-}
-
-.questions {
-  width: 500px;
-  height: 200px;
-  border-radius: 20px;
-  border: 2px solid var(--color-warning-500);
-  padding: 20px;
-  margin-bottom: 50px;
-
-  .item {
-    position: relative;
-  }
-
-  .question-header {
-    font-size: 1.5em;
-    background: var(--color-info-800);
-    color: #FFF;
-    padding: 10px;
-    margin-bottom: .3em;
-  }
-
-  .answer-slide {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    background: #FFF;
-    height: 167px;
-
-    &.next-question {
-      display: none;
-    }
-
-    .answer-indicator {
-      display: block;
-      cursor: pointer;
-      transition: background-color .3s ease-in-out;
-      padding: 8px;
-
-      &:hover {
-        background-color: var(--color-success-400);
-      }
-    }
-
-    .result {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 105px;
-    }
-
-    .back-btn {
-      position: absolute;
-      top: 11px;
-      right: 11px;
-      width: 50px;
-      height: 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 16px;
-      font-weight: 500;
-      background: var(--color-warning-500);
-      color: #FFF;
-      cursor: pointer;
-    }
-  }
-
-  #goToQuestion2Answer1:checked ~ #question2Answer1 {
-    display: block
-  }
-
-  #goToQuestion2Answer2:checked ~ #question2Answer2 {
-    display: block;
-  }
-
-  #goToQuestion2Answer3:checked ~ #question2Answer3 {
-    display: block;
-  }
-
-  #goToQuestion3Answer1:checked ~ #pizzaResultQuestion2Answer1 {
-    display: block;
-  }
-
-  #goToQuestion3Answer2:checked ~ #pizzaResultQuestion2Answer2 {
-    display: block;
-  }
-
-  #goToQuestion3Answer3:checked ~ #pizzaQuestion3Answer1 {
-    display: block;
-  }
-
-  #pizzaGoToResultAnswer1:checked ~ #pizzaResultQuestion3Answer1 {
-    display: block;
-  }
-
-  #pastaGoToResultAnswer1:checked ~ #question3Answer1 {
-    display: block;
-  }
-
-  #pastaGoToResultAnswer1:checked ~ #question3Answer2 {
-    display: block;
-  }
-
-  #pastaGoToResultAnswer1:checked ~ #question3Answer3 {
-    display: block;
-  }
-
-  //#question1Answer2GoToQuestion2_1AndBackTo1:checked ~ #questionTwoAnswerTwoOfQuestionOne {
-  //  display: block
-  //}
-
-  //#question1Answer3GoToQuestion2_2AndBackTo1:checked ~ #questionTwoAnswerThreeOfQuestionOne {
-  //  display: block;
-  //}
-  //
-  //#a1q1Question2Answer1GoToQuestion3_1AndBackTo2:checked ~ #questionThreeAnswerOneOfQuestionTwo {
-  //  display: block;
-  //}
-  //
-  //#a1q1question2Answer2GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerTwoOfQuestionTwo {
-  //  display: block;
-  //}
-  //
-  //#a1q1question2Answer3GoToQuestion3_2AndBackTo2:checked ~ #questionThreeAnswerThreeOfQuestionTwo {
-  //  display: block;
-  //}
-  //
-  //#answerOneQuestionThree:checked ~ #resultQuestionThreeAnswerOne {
-  //  display: block;
-  //}
-
-  .answer-check {
-    display: none;
-  }
-}
-
 
 
 

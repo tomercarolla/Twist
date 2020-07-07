@@ -1,0 +1,98 @@
+.contact-container {
+  padding-top: 100px;
+  background: url("../images/contact-bg.jpg") no-repeat -30px 120px;
+  background-size: 800px;
+}
+.contact-container__form {
+  width: 450px;
+  padding-bottom: 40px;
+  padding-right: 3px;
+  padding-top: 0;
+}
+.contact-container__form .column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.contact-container__form .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.contact-container__form .row label {
+  margin: 0;
+}
+.contact-container__form .checkbox-container {
+  margin-top: 1em;
+}
+.contact-container__form .checkbox-container label {
+  margin-left: 0.5em;
+}
+.contact-container__form .checkbox-container input {
+  width: 15px;
+  height: 15px;
+}
+.contact-container__form .checkbox-container label,
+.contact-container__form .checkbox-container input {
+  cursor: pointer;
+}
+.contact-container__form .radio-container {
+  margin-top: 1em;
+}
+.contact-container__form .radio-container label {
+  margin-bottom: 0;
+  height: 17px;
+  margin-left: 0.3em;
+  cursor: pointer;
+}
+.contact-container__form .radio-container p {
+  font-size: 16px;
+}
+.contact-container__form .radio-container .yes-radio-button {
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+.contact-container__form .radio-container .radio-box {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.contact-container__form .d-flex-align--center {
+  display: flex;
+  align-items: center;
+}
+.contact-container__form label {
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+.contact-container__form input,
+.contact-container__form textarea {
+  border: 1px solid #000;
+  height: 30px;
+  width: 100%;
+  padding-right: 0.5em;
+}
+.contact-container__form input::placeholder,
+.contact-container__form textarea::placeholder {
+  font-family: "Heebo", sans-serif;
+}
+.contact-container__form textarea {
+  resize: none;
+  height: 150px;
+}
+.contact-container__form .twist-bg-warning {
+  background: var(--color-warning-500);
+  border: 1px solid var(--color-warning-500);
+  width: 180px;
+  height: 40px;
+  font-size: 1em;
+  margin-top: 1em;
+  cursor: pointer;
+  color: #000;
+  transition: all 0.3s ease-out 0s;
+}
+.contact-container__form .twist-bg-warning:hover {
+  background: var(--color-warning-400);
+}
+
+/*# sourceMappingURL=contact-styles.css.map */
