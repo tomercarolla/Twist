@@ -7,13 +7,13 @@ let fourLink = document.getElementById("fourLink");
 
 window.addEventListener("scroll", function () {
 //Feedback page - active links
-    if (window.scrollY > 609 && window.scrollY < 1049) {
+    if (window.scrollY > 609 && window.scrollY < 1050) {
         firstLink.classList.add("active");
     } else {
         firstLink.classList.remove("active");
     }
 
-    if (window.scrollY > 1049 && window.scrollY < 1496) {
+    if (window.scrollY > 1050 && window.scrollY < 1496) {
         secondLink.classList.add("active");
     } else {
         secondLink.classList.remove("active");
