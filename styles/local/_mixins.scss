@@ -1,3 +1,4 @@
+//For the style guide
 /* generating HEX background colors */
 @mixin create-hex-colors {
   @each $name, $hex in $colors-hex {
